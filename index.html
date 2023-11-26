@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Pizza Order Form</title>
+</head>
+
+<body>
+    <p id="student-info"></p>
+
+    <h1>PIZZERIA</h1>
+
+    <form id="pizza-order-form">
+
+        <label for="pizza-size"><b>Select Pizza Size:</b></label>
+        <select id="pizza-size" name="pizza-size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+
+
+        <label for="crust"><b>Select Crust:</b></label>
+        <input type="radio" id="thin-crust" name="crust" value="thin">
+        <label for="thin-crust">Thin Crust</label>
+        <input type="radio" id="thick-crust" name="crust" value="thick">
+        <label for="thick-crust">Thick Crust</label>
+
+        <fieldset>
+            <legend>Select Toppings:</legend>
+            <input type="checkbox" id="topping-cheese" name="topping" value="cheese">
+            <label for="topping-cheese">Cheese</label>
+
+            <input type="checkbox" id="topping-pepperoni" name="topping" value="pepperoni">
+            <label for="topping-pepperoni">Pepperoni</label>
+
+            <input type="checkbox" id="topping-mushrooms" name="topping" value="mushrooms">
+            <label for="topping-mushrooms">Mushrooms</label>
+
+            <input type="checkbox" id="topping-olives" name="topping" value="olives">
+            <label for="topping-olives">Olives</label>
+
+            <input type="checkbox" id="topping-onions" name="topping" value="onions">
+            <label for="topping-onions">Onions</label>
+
+            <input type="checkbox" id="topping-bell-peppers" name="topping" value="bell-peppers">
+            <label for="topping-bell-peppers">Bell Peppers</label>
+
+            <input type="checkbox" id="topping-sausage" name="topping" value="sausage">
+            <label for="topping-sausage">Sausage</label>
+
+        </fieldset>
+
+        <label for="dipping-sauce"><b>Select Dipping Sauce:</b></label>
+        <select id="dipping-sauce" name="dipping-sauce">
+            <option value="ranch">Ranch</option>
+            <option value="marinara">Marinara</option>
+            <option value="creamy-garlic">Creamy Garlic</option>
+        </select>
+
+        <button type="button" onclick="placeOrder()">Order</button>
+    </form>
+
+    <div id="pizza-description"></div>
+</body>
+
+</html>
