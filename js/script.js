@@ -13,16 +13,13 @@ class Pizza {
 }
 
 function placeOrder() {
-    // Capture values from form inputs
     const pizzaSize = document.getElementById('pizza-size').value;
     const crust = document.querySelector('input[name="crust"]:checked').value;
     const toppings = document.querySelectorAll('input[name="topping"]:checked');
     const dippingSauce = document.getElementById('dipping-sauce').value;
 
-    // Create Pizza object
     const pizzaOrder = new Pizza(pizzaSize, crust, toppings, dippingSauce);
 
-    // Output description of customer's pizza to HTML
     const pizzaDescription = document.getElementById('pizza-description');
     pizzaDescription.innerHTML = `<p>Order Summary: ${pizzaOrder.getDescription()}</p>`;
 
